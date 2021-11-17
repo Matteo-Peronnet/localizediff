@@ -1,0 +1,51 @@
+{
+  "name": "localizediff",
+  "description": "localizediff is a software that allows you to synchronize translation files in json format with SaaS translation software [localise.biz/](https://localise.biz/)",
+  "version": "2.0.0",
+  "main": "localizediff.js",
+  "author": "Greenflex",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Greenflex/localizediff"
+  },
+  "keywords": [
+    "localize.biz",
+    "translation"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "babel-plugin-react-intl": "^3.0.1",
+    "babel-preset-react-app": "^7.0.2",
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "glob": "^7.1.2",
+    "js-yaml": "^3.14.1",
+    "node-cmd": "^3.0.0",
+    "npm": "^6.14.11",
+    "ramda": "^0.25.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "typescript": "^3.2.2",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint ."
+  },
+  "bin": {
+    "localizediff": "./localizediff.js",
+    "extractmessages": "./react-intl-cra.js"
+  }
+}

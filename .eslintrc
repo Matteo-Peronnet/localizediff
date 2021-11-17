@@ -1,0 +1,10 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "root": true,
+  "extends": ["airbnb", "prettier"],
+  "ignorePatterns": "*.test*",
+  "rules": { "no-continue": "warn", "no-loop-func": "off" }
+}
