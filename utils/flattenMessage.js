@@ -1,4 +1,4 @@
-module.exports = (function (nestedMessages, prefix) {
+function flattenMessage (nestedMessages, prefix) {
     if (prefix === void 0) { prefix = ''; }
     if (nestedMessages === null) {
         return {};
@@ -15,4 +15,7 @@ module.exports = (function (nestedMessages, prefix) {
         }
         return messages;
     }, {});
-})
+}
+
+
+module.exports = flattenMessage;
