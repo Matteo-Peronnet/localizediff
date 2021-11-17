@@ -1,4 +1,4 @@
-const flattenMessages = function (nestedMessages, prefix) {
+module.exports = (function (nestedMessages, prefix) {
     if (prefix === void 0) { prefix = ''; }
     if (nestedMessages === null) {
         return {};
@@ -15,7 +15,4 @@ const flattenMessages = function (nestedMessages, prefix) {
         }
         return messages;
     }, {});
-};
-
-
-export default flattenMessages;
+})
