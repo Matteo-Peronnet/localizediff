@@ -10,6 +10,7 @@ const cmd = require("node-cmd");
 const config = require("./config");
 const urlUtility = require("../utils/url");
 const logUtility = require("../utils/log");
+const flattenMessageUtility = require("../utils/flattenMessage");
 
 const { log, error } = logUtility;
 
@@ -147,7 +148,7 @@ module.exports = (function () {
         headers: {
           Authorization: `Loco ${key}`,
         },
-        body: finalFile,
+        body: flattenMessageUtility(finalFile),
       },
       (err, res) => {
         if (err) {

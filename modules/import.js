@@ -8,6 +8,7 @@ const chalk = require("chalk");
 const config = require("./config");
 const urlUtility = require("../utils/url");
 const logUtility = require("../utils/log");
+const flattenMessageUtility = require("../utils/flattenMessage");
 
 const { log, error } = logUtility;
 
@@ -72,7 +73,7 @@ module.exports = (function () {
         headers: {
           Authorization: `Loco ${options.key}`,
         },
-        body: finalFile,
+        body: flattenMessageUtility(finalFile),
       },
       (err, res) => {
         if (err) {
